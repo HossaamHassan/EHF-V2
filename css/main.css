@@ -39,6 +39,13 @@ p {
   background-color: #ae2431;
   color: white;
 }
+.carousel-inner::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #000000ad;
+}
 /* End Global Rules */
 /* Start Navbar */
 .logo .icons a {
@@ -64,11 +71,49 @@ p {
 }
 .navbar ul {
   font-size: 13px;
+  margin: 0 auto;
 }
 .navbar ul li a:hover {
   color: var(--sec-color);
 }
+.navbar .navbar-nav .nav-item .active {
+  color: var(--sec-color);
+}
+.dropdown-menu[data-bs-popper] {
+  left: unset;
+}
+.dropdown-menu {
+  width: 800px;
+}
+@media (max-width: 768px) {
+  .dropdown-menu {
+    width: unset;
+  }
+}
+.dropdown-menu a {
+  text-align: right;
+}
 /* End Navbar */
+/* Start Slider */
+.descraption {
+  position: relative;
+  right: 10%;
+  z-index: 2;
+  bottom: 10%;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .descraption {
+    right: 14%;
+  }
+  .descraption h5 {
+    font-size: 18px;
+  }
+  .descraption p {
+    font-size: 14px;
+  }
+}
+/* End Slider */
 /* Start News */
 .news .main-head .head::after {
   position: absolute;
@@ -102,11 +147,14 @@ p {
   height: 200px;
   width: 356px;
 }
+@media (max-width: 768px) {
+  .news .box img {
+    width: 100%;
+  }
+}
 /* End News */
 /* Start Partner */
 .partner .main-head .head::after {
-  position: absolute;
-  content: "";
   position: absolute;
   content: "";
   top: 0;
@@ -117,6 +165,14 @@ p {
 }
 .partner .part {
   background-color: #f3f3f3;
+}
+.partner .part img {
+  width: 300px;
+}
+@media (max-width: 768px) {
+  .partner .part img {
+    width: 150px;
+  }
 }
 /* End Partner */
 /* Start Footer */
@@ -159,5 +215,10 @@ p {
 .foot-1 {
   background-color: #a9a9a9;
   padding-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .foot-1 {
+    font-size: 14px;
+  }
 }
 /* End Footer */

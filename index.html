@@ -33,18 +33,21 @@
     <!-- Start Navbar -->
     <div class="logo bg-body-tertiary pt-2">
       <div class="container d-flex align-items-center justify-content-between">
-        <div
-          class="icons d-flex align-items-center justify-content-center gap-3"
-        >
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""> <i class="fa-brands fa-instagram"></i></a>
-          <a href=""> <i class="fa-brands fa-tiktok"></i></a>
-          <a href=""> <i class="fa-brands fa-youtube"></i></a>
-        </div>
         <a href="#">
           <img width="80px" src="./img/logo.png" alt="" />
         </a>
+        <div class="desc d-flex flex-column gap-3">
+          <p class="fw-bold">Egyptian Handball Federation</p>
+          <div
+            class="icons d-flex align-items-center justify-content-center gap-3"
+          >
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""> <i class="fa-brands fa-instagram"></i></a>
+            <a href=""> <i class="fa-brands fa-tiktok"></i></a>
+            <a href=""> <i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
       </div>
     </div>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -63,7 +66,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">الرئيسية</a>
+              <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">القوانين واللوائح</a>
@@ -71,8 +74,46 @@
             <li class="nav-item">
               <a class="nav-link" href="#">الحكام</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">الاندية</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                الاندية
+              </a>
+              <ul class="dropdown-menu">
+                <div class="row">
+                  <ul class="col-md-6 col-lg-3">
+                    <li><a class="dropdown-item" href="#">الاهلى</a></li>
+                    <li><a class="dropdown-item" href="#">الزمالك</a></li>
+                    <li><a class="dropdown-item" href="#">سبورتنج</a></li>
+                    <li><a class="dropdown-item" href="#">طلائع الجيش</a></li>
+                    <li><a class="dropdown-item" href="#"> هليوليدو</a></li>
+                  </ul>
+                  <ul class="col-md-6 col-lg-3">
+                    <li><a class="dropdown-item" href="#">سموحة</a></li>
+                    <li><a class="dropdown-item" href="#">البنك الاهلى</a></li>
+                    <li><a class="dropdown-item" href="#">هليوبلبس</a></li>
+                    <li><a class="dropdown-item" href="#">اكتوبر</a></li>
+                    <li><a class="dropdown-item" href="#">الحوار</a></li>
+                  </ul>
+                  <ul class="col-md-6 col-lg-3">
+                    <li><a class="dropdown-item" href="#">الاوليمبى</a></li>
+                    <li><a class="dropdown-item" href="#">المعادى</a></li>
+                    <li><a class="dropdown-item" href="#">الزهور</a></li>
+                    <li><a class="dropdown-item" href="#">الطيران</a></li>
+                  </ul>
+                  <ul class="col-md-6 col-lg-3">
+                    <li><a class="dropdown-item" href="#">اصحاب الجياد</a></li>
+                    <li><a class="dropdown-item" href="#">الجزيرة</a></li>
+                    <li><a class="dropdown-item" href="#">الشمس</a></li>
+                    <li><a class="dropdown-item" href="#">ستاد المنصورة</a></li>
+                  </ul>
+                </div>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">المنتخبات الوطنية</a>
@@ -127,33 +168,77 @@
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner position-relative">
         <div class="carousel-item active">
           <img
             style="height: 400px; object-fit: cover"
-            src="./img//slider-1.jpg"
+            src="./img//new-1.jpg"
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block"></div>
+          <div
+            class="descraption w-75 position-absolute d-flex justify-content-center flex-column gap-2"
+          >
+            <h5 class="fw-bold text-white">
+              الأهلي يجدد عقد عبدالرحمن حميد لاعب اليد لمدة 4 مواسم قادمة
+            </h5>
+            <p class="text-white">
+              أعلن الاعلامى احمد شوبير نجم الاهلى ومنتخب مصر السابق عن تجديد
+              القلعة الحمراء لعقد اللاعب عبد الرحمن حميد نجم فريق كرة اليد
+              بالنادي.
+            </p>
+            <div class="more pe-3 pb-3">
+              <a class="btn main-btn" href="#">المزيد</a>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
           <img
             style="height: 400px; object-fit: cover"
-            src="./img/slider-2.jpg"
+            src="./img/new-3.jpg"
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block"></div>
+          <div
+            class="descraption w-75 position-absolute d-flex justify-content-center flex-column gap-2"
+          >
+            <h5 class="fw-bold text-white">
+              انطلاق دورى محترفى كرة اليد للرجال ومرتبط 2006
+            </h5>
+            <p class="text-white">
+              تنطلق اليوم الجمعة ، مسابقة دورى المحترفين لكرة اليد للرجال للموسم
+              المحلى 2023/2024 على صعيد 8 مواجهات . وتشهد الجولة الأولى مواجهات
+              بين كل من: الأهلى مع الزهور والزمالك مع المعادى والطيران مع العبور
+              وطلائع الجيش مع سموحة وهليوبوليس مع الشمس .
+            </p>
+            <div class="more pe-3 pb-3">
+              <a class="btn main-btn" href="#">المزيد</a>
+            </div>
+          </div>
         </div>
         <div class="carousel-item">
           <img
             style="height: 400px; object-fit: cover"
-            src="./img/slider-3.jpg"
+            src="./img/slide-4.jpg"
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block"></div>
+          <div
+            class="descraption w-75 position-absolute d-flex justify-content-center flex-column gap-2"
+          >
+            <h5 class="fw-bold text-white">
+              عبد البارى يطالب وزارة الرياضة بحل أزمة قيد يد الزمالك قبل انطلاق
+              دورى المحترفين
+            </h5>
+            <p class="text-white">
+              طلب حمادة عبد البارى مدير جهاز كرة اليد بنادى الزمالك من اللجنة
+              الثلاثية لإدارة القلعة البيضاء التحدث مع وزارة الرياضة لحل أزمة
+              قيد الفريق قبل انطلاق دورى المحترفين غداً الجمعة .
+            </p>
+            <div class="more pe-3 pb-3">
+              <a class="btn main-btn" href="#">المزيد</a>
+            </div>
+          </div>
         </div>
       </div>
       <button
@@ -249,7 +334,7 @@
             <div class="col-md-6 col-lg-4">
               <div class="box">
                 <div class="pic">
-                  <img class="mw-100" src="./img/new-1.jpg" alt="" />
+                  <img class="mw-100" src="./img/slide-4.jpg" alt="" />
                 </div>
                 <div class="content p-2 pb-4">
                   <h5 class="fw-bold">
@@ -325,12 +410,9 @@
           </div>
         </div>
       </div>
-      <div
-        class="part d-flex align-items-center justify-content-center gap-5 flex-column flex-md-row flex-lg-row"
-      >
-        <img width="300px" class="mw-100" src="./img/NBE_logo.png" alt="" />
+      <div class="part d-flex align-items-center justify-content-center gap-5">
+        <img class="mw-100" src="./img/NBE_logo.png" alt="" />
         <img
-          width="300px"
           class="mw-100"
           src="./img/E-Finance-9-removebg-preview.png"
           alt=""
